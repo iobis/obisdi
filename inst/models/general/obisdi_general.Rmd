@@ -1,0 +1,46 @@
+---
+title: "Marine biodiversity data ingestion for OBIS (DwC translation)"
+subtitle: "PROJECT_NAME"
+author:
+- [your name here]
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+This document describes how we map the checklist data to Darwin Core. The source file for this document can be found [here](https://github.com/ADD_GITHUB_USER/ADD_PROJECT_REPO/blob/master/src/obisdi_general.Rmd).
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+Load libraries:
+
+```{r}
+library(tidyverse)      # Data manipulation
+```
+
+# Read source data
+
+[read your data from "data/raw" or explicitly download files to this path and read the data]
+
+# Preprocessing
+
+[any preparing steps for the use of the data]
+
+# Darwin Core mapping
+
+[mapping steps to DwC]
+
+# Post-processing
+
+[remove unused collumns, tidy your data before saving the final files]
+
+# Export final files
+
+[export final files in csv, tabular or parquet format]

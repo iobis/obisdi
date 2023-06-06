@@ -1,0 +1,26 @@
+Binding: .obisdi_create
+Title: Marine Biodiversity data ingestion - OBIS
+OpenFiles: README.md, *.Rmd
+Icon: obisdi_logo.png
+
+Parameter: datanam
+Widget: TextInput
+Label: Dataset name
+Position: left
+
+Parameter: file
+Widget: FileInput
+Label: Data file (optional)
+Position: left
+
+Parameter: convert
+Widget: CheckboxInput
+Label: Convert to parquet (only if file exceed 50MB)
+Default: On
+Position: left
+
+Parameter: type
+Widget: SelectInput
+Label: Type of ingestion
+Fields: general
+Position: left
