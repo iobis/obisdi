@@ -101,6 +101,10 @@
   ol <- gsub("PROJECT_FOLD_NAME", fld, ol)
   writeLines(ol, paste0(path, "/README.md"))
 
+  ol <- readLines(paste0(path, "/src/_site.yml"))
+  ol <- gsub("DATASET_NAME", dots[["datanam"]], ol)
+  writeLines(ol, paste0(path, "/src/_site.yml"))
+
   # Save gitignore file
   writeLines(
     "# History files
@@ -208,6 +212,10 @@ obisdi_create <- function(path,
   fld <- basename(path)
   ol <- gsub("PROJECT_FOLD_NAME", fld, ol)
   writeLines(ol, paste0(path, "/README.md"))
+
+  ol <- readLines(paste0(path, "/src/_site.yml"))
+  ol <- gsub("DATASET_NAME", dots[["datanam"]], ol)
+  writeLines(ol, paste0(path, "/src/_site.yml"))
 
   # Save gitignore file
   writeLines(

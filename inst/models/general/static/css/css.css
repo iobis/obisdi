@@ -1,1 +1,123 @@
-#css
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
+
+ /*------------- Whole Document---------------- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: #0076b1;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 19px;
+}
+
+/*----------------ADDING WHITE SPACE-------------*/
+
+.title {
+  margin-top: 0.75em !important;
+  margin-bottom: 0.75em;
+}
+
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5 {
+  padding-top: 3em !important; /*adding so much padding because theme adds a margin-top: -65px by default */
+  margin-bottom: 0.75em;
+}
+
+
+  /* Space Between TOC and
+  Righthand side content on large screens */
+
+ @media (min-width: 992px) {
+    .col-md-9 {
+      width: 75%;
+      padding-left: 5em !important;
+    }
+ }
+
+ /* NO TOC on mobile */
+@media screen and (max-width: 767px){
+
+  .col-xs-12.col-sm-4.col-md-3 {
+    display: none;
+  }
+
+  .top-text {
+    font-size: 25px;
+  }
+
+  .bottom-text {
+    font-size: 40px;
+  }
+
+
+}
+
+.tocify {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 120px; /*Controls where TOC stops when sticky */
+  width: 100% !important;
+  border: none;
+}
+
+
+   /* TOC links */
+
+.list-group-item {
+    color: #065C86;
+    font-size: 16px;
+}
+
+.list-group-item.active {
+    color: #065C86;
+    background-color: white;
+    border: none;
+}
+
+.list-group-item:hover,
+.list-group-item.active:hover {
+    color: #badced;
+    background-color: white;
+}
+
+/*----------------NAVBAR ---------------*/
+.navbar-default {
+    background-color: #0076b1f2;
+}
+
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.active>a,
+a.dropdown-toggle:hover {
+  background-color: #0076b1 !important;
+}
+
+/* Dropdown menu color */
+.navbar-default .dropdown-menu {
+  background-color: #0076b1;
+}
+
+/* Dropdown menu hover color */
+  .navbar-default .dropdown-menu>li>a:hover {
+    background-color: #0076b1f2;
+  }
+
+/* Navbar Links when hovered*/
+.navbar-default .dropdown-menu>.active>a
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav:hover,
+.navbar-default .navbar-nav>li>a:hover,
+a.navbar-brand:hover {
+  color: #ffffff !important;
+  background-color: #0076b1;
+}

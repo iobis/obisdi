@@ -1,0 +1,12 @@
+---
+  title: " "
+---
+
+```{r, echo=FALSE, results='asis'}
+# DONT EDIT THIS FILE! IT WILL BE GENERATED BASED ON THE README.md
+doc <- readLines("../README.md")
+lrm <- grep("<!-- PACKAGE DETAILS -->", doc)
+res <- doc[-lrm:-length(doc)]
+cat(res, sep = "\n")
+# DONT EDIT THIS FILE!
+```

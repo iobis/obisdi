@@ -1,0 +1,18 @@
+name: DATASET_NAME
+output_dir: "../docs"
+include: ["static/"]
+navbar:
+  title: DATASET_NAME
+  left:
+    - text: "Darwin Core mapping"
+      href: obisdi_general.html
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/
+output:
+  html_document:
+    theme: yeti
+    df_print: paged
+    css: "static/css/css.css"
+    include:
+      after_body: static/footer.html
