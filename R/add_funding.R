@@ -1,3 +1,18 @@
+#' Add funding details on README and .Rmd files
+#'
+#' @param fund_message \code{character} message to be written
+#' @param fund_name \code{character} name of the funding body
+#' @param fund_code number of the grant/funding or \code{NULL} to ignore
+#' @param html_text a \code{character} with HTML code to be inserted in the
+#' funding area. If used, all other parameters are ignored.
+#'
+#' @return Edited files.
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' add_funding(fund_name = "My funder", fund_code = "1000")
+#' }
 add_funding <- function(fund_message = "This work was funded by",
                         fund_name,
                         fund_code = NULL,
