@@ -42,16 +42,12 @@ Files and directories indicated with `GENERATED` should not be edited manually.
 <!-- Please don't edit below this line -->
 <!-- PACKAGE DETAILS -->
 <br>
+
 <!--INSTITUTIONAL_DETAILS-->
 <!--FUNDING_DETAILS-->
-This repository was created using the
-`obisdi` package [(download here)](https://github.com/iobis/obisdi/) and was inspired by the [TrIAS
-Project checklist
-recipe](https://github.com/trias-project/checklist-recipe/). This
-README is a direct adaptation of the TrIAS model, with slight changes.
-<br>  
-<img style="float: left; margin-right: 20px;" src="src/static/obisdi_logo.png" width="60">
-<hr>
 
-OBIS Data Ingestion \| Ocean Biodiversity Information System
-[(obis.org)](https://obis.org/)
+This repository was created using the
+`obisdi` package [(download here)](https://github.com/iobis/obisdi/) and was inspired by the [TrIAS Project checklist recipe](https://github.com/trias-project/checklist-recipe/). This README is a direct adaptation of the TrIAS model, with slight changes.
+<hr>
+<br>  
+<img src="src/static/obisdi_logo.png" width="60" align="left" /> OBIS Data Ingestion | Ocean Biodiversity Information System <a href = "https://obis.org/">(obis.org)</a>
