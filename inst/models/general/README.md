@@ -2,11 +2,12 @@
 
 ## About this dataset
 
+<!-- DATASET_METADATA -->
 [add a description of your dataset here.]
 
 ## Workflow
 
-[source data]({link to the source data}) → Darwin Core [mapping script]({link to HTML or RMD of the mapping script}) → generated [Darwin Core files]({link to processed data folder})
+[source data](<GITHUB-REPO>/tree/master/data/raw) → Darwin Core [mapping script](<GITHUB-REPO>/blob/master/src/obisdi_general.Rmd) → generated [Darwin Core files](<GITHUB-REPO>/tree/master/data/processed)
 
 ## Additional metadata
 

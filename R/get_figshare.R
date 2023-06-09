@@ -94,9 +94,11 @@ get_figshare <- function(article_id, download_files = FALSE, save_meta = FALSE,
     meta_details$download_urls <- paste0("{", names(unlist(full_details$download_url)),
                                          " : ",  unlist(full_details$download_url) ,"}",
                                          collapse = ";")
+    meta_details$reponame <- "FigShare"
+    meta_details$doi <- gsub("https://doi.org/", "", meta_details$doi)
     write.csv(meta_details, paste0(
       path, "/figshare_metadata_", format(Sys.Date(), "%d%m%Y"), ".csv"
-    ))
+    ), row.names = F)
   }
 
   return(full_details)

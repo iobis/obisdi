@@ -105,6 +105,18 @@
   ol <- gsub("DATASET_NAME", dots[["datanam"]], ol)
   writeLines(ol, paste0(path, "/src/_site.yml"))
 
+  # Add nojekyll for githubpages
+  nojekyll <- file.path(path, "/.nojekyll")
+  file.create(nojekyll)
+
+  # Edit .Rproj to be of website type
+  rstudioapi::initializeProject(path)
+  lf <- list.files(path, pattern = ".Rproj", full.names = T)
+  ol <- readLines(lf)
+  nol <- c("", "BuildType: Website", "WebsitePath: src")
+  ol <- c(ol, nol)
+  writeLines(ol, lf)
+
   # Save gitignore file
   writeLines(
     "# History files
@@ -216,6 +228,10 @@ obisdi_create <- function(path,
   ol <- readLines(paste0(path, "/src/_site.yml"))
   ol <- gsub("DATASET_NAME", dots[["datanam"]], ol)
   writeLines(ol, paste0(path, "/src/_site.yml"))
+
+  # Add nojekyll for githubpages
+  nojekyll <- file.path(path, ".nojekyll")
+  file.create(nojekyll)
 
   # Save gitignore file
   writeLines(

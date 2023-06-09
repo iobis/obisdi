@@ -13,7 +13,7 @@ output:
     toc_float: yes
 ---
 
-This document describes how we map the checklist data to Darwin Core. The source file for this document can be found [here](https://github.com/ADD_GITHUB_USER/ADD_PROJECT_REPO/blob/master/src/obisdi_general.Rmd).
+This document describes how we map the checklist data to Darwin Core. The source file for this document can be found [here](<GITHUB-REPO>/blob/master/src/obisdi_general.Rmd).
 
 ```{r setup, include = FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
