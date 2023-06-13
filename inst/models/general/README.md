@@ -37,7 +37,8 @@ Files and directories indicated with `GENERATED` should not be edited manually.
 └── src
     ├── dwc_mapping.Rmd    : Darwin Core mapping script
     ├── _site.yml          : Settings to build website in docs/
-    └── index.Rmd          : Template for website homepage
+    ├── index.Rmd          : Template for website homepage
+    └── static             : Figures and CSS code for the website
 ```
 <!-- Please don't edit below this line -->
 <!-- PACKAGE DETAILS -->
