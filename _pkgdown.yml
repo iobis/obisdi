@@ -1,0 +1,43 @@
+url: https://iobis.github.io/obisdi
+template:
+  bootstrap: 5
+  bootswatch: flatly
+  bslib:
+    base_font: {google: "Open Sans"}
+    heading_font: {google: "Montserrat"}
+    code_font: {google: "JetBrains Mono"}
+    h1-font-size: 2.5
+    h2-font-size: 1.75
+    h3-font-size: 1.5
+    h4-font-size: 1.2
+    h5-font-size: 1.1
+    headings-font-weight: 900
+navbar:
+  bg: primary
+reference:
+- title: "Create obisdi structure"
+  desc: >
+    Create a standard project folder with the obisdi structure. This provides
+    the base for creating a Darwin Core mapping project.
+  contents:
+  - obisdi_create
+  - obisdi_mapping
+- title: "Adding information"
+  desc: "Functions for adding information on the README and/or mapping Rmarkdown."
+  contents:
+  - starts_with("add_")
+- title: "Adding Darwin Core mapping fields"
+  desc: "Functions for adding Darwin Core fields into the mapping source Rmarkdown."
+  contents:
+  - starts_with("add_dwc")
+- title: "Get information"
+  desc: "Extract information or download files from repositories."
+  contents:
+  - starts_with("get")
+- title: "Generate metadata file"
+  desc: "Functions for generating a metadata file. See the main gen_metadata for more details."
+  contents:
+  - starts_with("gen")
+- title: "Methods for gen_metadata objects"
+  contents:
+  - matches("\\.meta")

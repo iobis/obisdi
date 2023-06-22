@@ -2,9 +2,9 @@ Package: obisdi
 Title: Ingest Marine Biodiversity Datasets for OBIS
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+    person("Silas C.", "Principe", , "s.principe@unesco.org", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-8059-6304"))
+Description: Create a structure for projects of data ingestion into OBIS.
 License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

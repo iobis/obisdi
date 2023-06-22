@@ -6,10 +6,10 @@
 \alias{obisdi-package}
 \title{obisdi: Ingest Marine Biodiversity Datasets for OBIS}
 \description{
-What the package does (one paragraph).
+Create a structure for projects of data ingestion into OBIS.
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Silas C. Principe \email{s.principe@unesco.org} (\href{https://orcid.org/0000-0002-8059-6304}{ORCID})
 
 }
 \keyword{internal}

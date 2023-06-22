@@ -213,7 +213,7 @@ add_dwc_occurrence <- function(markup = "<!--DWC_OCCURRENCES-->", full = FALSE,
                 "scientificName",
                 "kingdom","phylum","class","order","family","genus",
                 "taxonRank",
-                "AphiaID"
+                "scientificNameID"
     )
   } else {
     fields <- c("occurrenceID",
