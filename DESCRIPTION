@@ -6,6 +6,8 @@ Authors@R:
            comment = c(ORCID = "0000-0002-8059-6304"))
 Description: Create a structure for projects of data ingestion into OBIS.
 License: CC0
+URL: https://iobis.github.io/obisdi, https://github.com/iobis/obisdi
+BugReports: https://github.com/iobis/obisdi/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3

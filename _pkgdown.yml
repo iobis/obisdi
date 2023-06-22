@@ -14,6 +14,14 @@ template:
     headings-font-weight: 900
 navbar:
   bg: primary
+  structure:
+    left:  [intro, reference, articles, tutorials, news]
+    right: [search, github]
+  components:
+    github:
+      icon: fa-github
+      href: https://github.com/iobis/obisdi
+      aria-label: github
 reference:
 - title: "Create obisdi structure"
   desc: >
