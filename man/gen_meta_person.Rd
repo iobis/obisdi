@@ -64,6 +64,10 @@ Similarly you can supply a vector:
 \code{selected_people <- people + c("John Doe", "Max Planck")}
 
 Of course, names should match the original ones, otherwise an error is thrown.
+
+The - method works for excluding someone from the list:
+
+\code{selected_people <- people - "John Doe"}
 }
 \examples{
 \dontrun{

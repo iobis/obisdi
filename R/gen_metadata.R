@@ -26,6 +26,10 @@
 #'
 #' Of course, names should match the original ones, otherwise an error is thrown.
 #'
+#' The - method works for excluding someone from the list:
+#'
+#' \code{selected_people <- people - "John Doe"}
+#'
 #'
 #' @return a list containing the original values and a list of XML ready objects
 #' @export
@@ -99,23 +103,12 @@ gen_meta_person <- function (
   return(flist)
 }
 
-#' Print method for the generate_meta_person
-#'
-#' @param x object
-#'
-#' @return printed object
 #' @export
 print.meta_person <- function(x){
   print(x$original)
   return(invisible(NULL))
 }
 
-#' Select name method for the meta_person class
-#'
-#' @param e1 object
-#' @param e2 names
-#'
-#' @return a new object meta_person
 #' @export
 `+.meta_person` <- function(e1, e2) {
   e2 <- gsub(" ", "_", e2)
@@ -134,12 +127,7 @@ print.meta_person <- function(x){
   return(new_list)
 }
 
-#' Select name method for the meta_person class
-#'
-#' @param e1 object
-#' @param e2 names
-#'
-#' @return a new object meta_person
+
 #' @export
 `-.meta_person` <- function(e1, e2) {
   e2 <- gsub(" ", "_", e2)
@@ -353,11 +341,7 @@ gen_meta_taxoncov <- function(
   return(flist)
 }
 
-#' Print method for the generate_*cov group
-#'
-#' @param x
-#'
-#' @return printed object
+
 #' @export
 print.meta_cov <- function(x){
   print(x$original)
