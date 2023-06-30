@@ -28,7 +28,7 @@ add_metadata_readme <- function(meta){
   nl <- paste0(
     meta$description,"\n\n",
     paste0("It was published in ", meta$reponame, " (https://doi.org/", meta$doi, "), and was authored by ", meta$authors, "."),"\n\n",
-    paste0("The first version of the dataset is available since ", format(as.Date(meta$date), "%d-%m-%Y"),
+    paste0("The first version of the dataset is available since ", format(as.Date(meta$date), "%Y-%m-%d"),
            " and is licensed under a ", meta$license, " license."),
     collapse = "\n"
   )
