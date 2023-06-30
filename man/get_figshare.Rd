@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_figshare.R
 \name{get_figshare}
 \alias{get_figshare}
-\title{Add funding details on README and .Rmd files}
+\title{Get data and metadata from a FigShare article}
 \usage{
 get_figshare(
   article_id,
@@ -30,7 +30,7 @@ In this case you can either supply an adjusted path or use \code{\link[here:here
 A \code{list} with information about the FigShare article (see details).
 }
 \description{
-Add funding details on README and .Rmd files
+Get data and metadata from a FigShare article
 }
 \details{
 The returned \code{list} will contain the following fields:

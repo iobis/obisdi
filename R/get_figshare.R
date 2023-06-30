@@ -1,4 +1,4 @@
-#' Add funding details on README and .Rmd files
+#' Get data and metadata from a FigShare article
 #'
 #' @param article_id the FigShare article ID. This is the number shown at the end
 #' of any FigShare document URL (e.g. https://figshare.com/articles/dataset/A_comprehensive_dataset_of_the_cold-water_coral_diversity/21997559,
