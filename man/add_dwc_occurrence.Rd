@@ -31,13 +31,15 @@ Rmd file of the package is used.}
 an edited Rmarkdown
 }
 \description{
-This file enables to easily add a code chunk with the fields which usually needs to be
+This function enables to easily add a code chunk with the fields which usually needs to be
 mapped when describing an occurrence type for OBIS (as well as GBIF).
 }
 \details{
-For this code to work, you need to first add the \strong{\code{markup}} to the Rmarkdown. Then, the function
-will locate the markup and substitute it for the formated code chunk. Note that you can use any
-markup, but this have to be identifiable within your file.
+For this function to work, you need to first add the \strong{\code{markup}} to the
+Rmarkdown. The standard one is \code{<!--DWC_EVENT-->} (with no quotation
+marks). Then, the function will locate the markup and substitute it for the
+formated code chunk. Note that you can use any markup, but this have to be
+identifiable within your file.
 
 Note that the \code{full} does not contains all fields available in DwC for this class. Also, the recommended
 fields for the class include some other fields that should usually be included, but are not necessary. See
