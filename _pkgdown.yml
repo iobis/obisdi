@@ -44,9 +44,6 @@ reference:
   contents:
   - starts_with("get")
 - title: "Generate metadata file"
-  desc: "Functions for generating a metadata file. See the main gen_metadata for more details."
+  desc: "Functions for generating a metadata file. See the main `gen_metadata` for more details."
   contents:
   - starts_with("gen")
-- title: "Methods for gen_metadata objects"
-  contents:
-  - matches("\\.meta")
